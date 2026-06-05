@@ -1,0 +1,17 @@
+# 股票K线数据（太大，不上传）
+*.csv
+kline/
+data/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# IDE
+.vscode/
+.idea/
+
+# 临时文件
+*.tmp
+*.log
