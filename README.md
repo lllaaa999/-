@@ -127,13 +127,27 @@ flowchart LR
 
 ---
 
-## 📚 文档导航
+## 📚 目录与固件源码导航
 
+### 1. 核心技术文档
 * 📑 [完整物料清单与采购指南 (BOM)](docs/hardware/BOM.md)
 * 🔌 [引脚分配与电路连线图 (Wiring & Pinout)](docs/hardware/WIRING_AND_PINOUT.md)
 * ⚠️ [硬件避坑红宝书 (Hardware Pitfalls)](docs/hardware/HARDWARE_PITFALLS.md)
 * 💻 [身脑通信协议与软件架构 (Software Architecture)](docs/software/ARCHITECTURE.md)
 * 📋 [项目详细实施规划 (Implementation Plan)](docs/roadmap/IMPLEMENTATION_PLAN.md)
+
+### 2. 固件工程与控制源码
+* 🐕 [STM32F103 下位机身体控制源码 (PlatformIO / Keil)](firmware/stm32f103/README.md)
+  * 4 路 SG90 舵机 50Hz 硬件 PWM 驱动 + 防扫齿平滑插值插补
+  * 对角小跑 (Trot)、原地踏步转向、打招呼、视线闭环跟随步态
+  * `$ACT,...#` 与 `$TRACK,...#` 身脑协议解析器
+* 🧠 [ESP32-S3-CAM 大脑中枢与小智 AI 适配](firmware/esp32-s3/README.md)
+  * 小智 AI 固件自定义引脚适配表 (`xiaozhi_custom_pins.json`)
+  * 大模型语音动作意图调度器 (`action_dispatcher`)
+  * OV2640 120° 广角人脸抓取与视线偏差提取独立测试工程 (`vision_tracker`)
+* ⚡ [一键固件烧录工具库 (Tools)](tools/)
+  * `flash_esp32.bat`：ESP32-S3 固件一键烧录脚本
+  * `flash_stm32.bat`：STM32 ST-Link 一键烧录脚本
 
 ---
 

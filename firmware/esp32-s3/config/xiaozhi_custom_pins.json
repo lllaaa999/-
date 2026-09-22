@@ -1,0 +1,36 @@
+{
+  "board_name": "Recovery_Plan_Dog_S3",
+  "chip_model": "ESP32-S3",
+  "psram_size": "8MB",
+  "flash_size": "16MB",
+  "audio_input": {
+    "type": "I2S_MIC_INMP441",
+    "bclk_pin": 6,
+    "ws_pin": 5,
+    "data_in_pin": 4
+  },
+  "audio_output": {
+    "type": "I2S_MAX98357A",
+    "bclk_pin": 2,
+    "lrc_pin": 1,
+    "data_out_pin": 7
+  },
+  "display": {
+    "type": "SSD1306_I2C",
+    "sda_pin": 9,
+    "scl_pin": 8,
+    "width": 128,
+    "height": 64
+  },
+  "serial_bridge": {
+    "port": 1,
+    "baud_rate": 115200,
+    "tx_pin": 43,
+    "rx_pin": 44
+  },
+  "camera": {
+    "model": "OV2640_DVP",
+    "fov": 120,
+    "fpc_length_mm": 75
+  }
+}
