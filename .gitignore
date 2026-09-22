@@ -1,0 +1,42 @@
+# Binaries & Build outputs
+build/
+bin/
+obj/
+*.o
+*.obj
+*.hex
+*.bin
+*.elf
+*.map
+
+# Keil MDK
+*.uvopt
+*.uvoptx
+*.uvgui*
+*.uvproj.saved_*
+JLinkLog.txt
+*.d
+*.crf
+*.htm
+*.lnp
+*.sct
+*.axf
+Listings/
+Objects/
+
+# VSCode & IDEs
+.vscode/
+.idea/
+*.swp
+*~
+
+# ESP-IDF / PlatformIO
+.pio/
+.espressif/
+sdkconfig
+sdkconfig.old
+
+# OS specific
+.DS_Store
+Thumbs.db
+Desktop.ini
